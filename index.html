@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Many Dice</title>
+</head>
+<body>
+<h1>Many Dice</h1>
+<p>Input the "dice" table, the number of times it's being rolled on, and a random number between 0 and 1 to find out
+    what the result is!</p>
+<div><label for="outcomeTable">Outcome table: </label><textarea id="outcomeTable"></textarea></div>
+<div><label for="eventCount">Roll count: </label><input id="eventCount" type="number" min=0 max=170> (Warning: beyond
+    500 it might start cooking your CPU briefly)
+</div>
+<div><label for="randomSample">Random Sample: </label><input id="randomSample" type="number" min=0 max=1 step=0.1></div>
+<div id="result"></div>
+</body>
+<script src="src/app.js" type="module"></script>
+</html>
